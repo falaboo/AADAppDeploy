@@ -1,8 +1,14 @@
-"parameters": {
-    "storageAccountType": {
-        "type": "string",
-        "metadata": {
-            "description": "The type of the new storage account created to store the VM disks."
-        }
+"resources": [
+  {
+    "apiVersion": "2016-01-01",
+    "type": "Microsoft.Storage/storageAccounts",
+    "name": "mystorageaccount",
+    "location": "westus",
+    "sku": {
+      "name": "Standard_LRS"
+    },
+    "kind": "Storage",
+    "properties": {
     }
-}
+  }
+]
